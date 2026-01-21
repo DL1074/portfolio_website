@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto">
           <div className="mb-12">
             <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Get In Touch</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">I'd love to hear from you!</p>
+            <p className="text-lg text-gray-600 dark:text-gray-400">I&apos;d love to hear from you!</p>
           </div>
         
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-8">

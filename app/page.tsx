@@ -38,7 +38,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-700 dark:text-gray-300">
               This portfolio website serves as a comprehensive showcase of my professional journey, 
-              skills, and accomplishments. It's designed to provide recruiters and potential employers 
+              skills, and accomplishments. It&apos;s designed to provide recruiters and potential employers 
               with a clear view of my capabilities and achievements in a clean, organized format.
             </p>
           </div>
