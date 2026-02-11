@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen">
@@ -5,18 +7,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <div className="bg-gray-200 dark:bg-gray-700 rounded-lg p-8 h-80 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                    Profile Image Placeholder
-                  </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                    Add your image to:
-                  </p>
-                  <code className="inline-block bg-white dark:bg-gray-800 px-3 py-2 rounded text-xs text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600">
-                    /public/images/profile.jpg
-                  </code>
-                </div>
+              <div className="relative w-full h-80 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Profile"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
             </div>
             <div>
@@ -24,10 +22,12 @@ export default function Home() {
                 Introduction
               </h1>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Add your introduction here. Share who you are, what you do, and what makes you unique.
+                Hi, I’m David Lin. I am a Informational Technology and Informatics (ITI) student at Rutgers University with a focus on backend development, automation, and scalable systems. 
+                I enjoy building reliable, performance oriented tools, and exploring how AI can improve real world through workflows. 
+                This site serves as a snapshot of my technical background, projects, and experience.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                This is your opportunity to make a strong first impression with recruiters and potential employers.
+                Use the navigation menu to explore my projects, technical skills, and experience in more detail.
               </p>
             </div>
           </div>
@@ -37,9 +37,9 @@ export default function Home() {
               Site Objective
             </h2>
             <p className="text-gray-700 dark:text-gray-300">
-              This portfolio website serves as a comprehensive showcase of my professional journey, 
-              skills, and accomplishments. It&apos;s designed to provide recruiters and potential employers 
-              with a clear view of my capabilities and achievements in a clean, organized format.
+              The objective of this website is to provide a clear, organized overview of my skills, projects, and experience. 
+              It is designed to help recruiters, employers, and peers quickly understand my technical background and explore my work.
+              It is also designed for them to navigate relevant sections through a consistent menu available on every page.
             </p>
           </div>
         </div>

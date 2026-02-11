@@ -48,23 +48,18 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Education</h2>
             <div className="space-y-6">
               <div className="border-l-4 border-blue-600 pl-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Degree Name / Major</h3>
                 <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2">University Name</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Year - Year</p>
-                <p className="text-gray-700 dark:text-gray-300">Add details about your degree, major achievements, relevant coursework, or honors.</p>
-              </div>
-              <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Additional Education / Certifications</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2">Institution / Platform</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Year</p>
                 <p className="text-gray-700 dark:text-gray-300">List any certifications, bootcamps, or additional training programs.</p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
