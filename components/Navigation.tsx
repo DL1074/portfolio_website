@@ -12,6 +12,7 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
+    { name: "Architecture", path: "/architecture" },
     { name: "Experience", path: "/experience" },
     { name: "Contact", path: "/contact" },
   ];

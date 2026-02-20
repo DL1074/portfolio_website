@@ -27,6 +27,58 @@ export default function About() {
           </div>
 
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">How I Build Systems</h2>
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
+              My engineering philosophy is rooted in building efficient, scalable systems that solve real problems. 
+              Here are the core principles that guide my approach to software development:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Measure Before Optimizing</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Use profiling and metrics to identify actual bottlenecks rather than assumptions. 
+                  Data-driven decisions lead to meaningful performance improvements.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Prefer Async Over Sync for I/O</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Non-blocking operations prevent thread starvation and improve throughput. 
+                  Async architecture enables systems to handle more concurrent operations efficiently.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Design Systems to Degrade Gracefully</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Build fault-tolerant systems with fallback mechanisms. Partial failures shouldn't 
+                  cascade into complete system outages.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Eliminate Unnecessary Computation</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Cache results, batch operations, and avoid redundant work. The fastest code 
+                  is the code that doesn't run at all.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Write Testable, Maintainable Code</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Prioritize code clarity and comprehensive test coverage. Well-tested systems 
+                  enable confident iteration and refactoring.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Scale Horizontally When Possible</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Design stateless services that can be replicated. Horizontal scaling provides 
+                  better fault tolerance and more predictable performance characteristics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Skills & Expertise</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -87,6 +139,52 @@ export default function About() {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Engineering Principles</h2>
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
+              These quotes capture the essence of what I believe makes great software engineering:
+            </p>
+            <div className="space-y-6">
+              <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border-l-4 border-blue-600">
+                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-3">
+                  "Programs must be written for people to read, and only incidentally for machines to execute."
+                </p>
+                <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">
+                  — Harold Abelson
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border-l-4 border-blue-600">
+                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-3">
+                  "The best performance optimization is eliminating unnecessary work."
+                </p>
+                <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">
+                  — Donald Knuth
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mt-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Currently Exploring</h2>
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
+              I'm continuously expanding my technical knowledge in areas that align with building high-performance, scalable systems:
+            </p>
+            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+              <li className="flex items-start gap-3">
+                <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
+                <span>Distributed system scaling and consensus algorithms</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
+                <span>Compiler-level optimizations and performance profiling</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
+                <span>Memory-efficient architectures and cache optimization strategies</span>
+              </li>
+            </ul>
           </div>
 
         </div>

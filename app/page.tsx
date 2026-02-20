@@ -32,6 +32,38 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-16">
+            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+              Technical Highlights
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 dark:text-green-400 text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Built system used by 20+ engineers
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 dark:text-green-400 text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 dark:text-gray-300">
+                  96% test coverage achieved
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 dark:text-green-400 text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Reduced bot traffic by 40%
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 dark:text-green-400 text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Optimized server load by 10%
+                </p>
+              </div>
+            </div>
+          </div>
+
           
         </div>
       </div>
