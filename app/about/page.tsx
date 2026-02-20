@@ -50,7 +50,7 @@ export default function About() {
               <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
                 <h3 className="font-bold text-gray-900 dark:text-white mb-2">Design Systems to Degrade Gracefully</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  Build fault-tolerant systems with fallback mechanisms. Partial failures shouldn't 
+                  Build fault-tolerant systems with fallback mechanisms. Partial failures shouldn&apos;t 
                   cascade into complete system outages.
                 </p>
               </div>
@@ -58,7 +58,7 @@ export default function About() {
                 <h3 className="font-bold text-gray-900 dark:text-white mb-2">Eliminate Unnecessary Computation</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
                   Cache results, batch operations, and avoid redundant work. The fastest code 
-                  is the code that doesn't run at all.
+                  is the code that doesn&apos;t run at all.
                 </p>
               </div>
               <div className="bg-white dark:bg-gray-900 p-5 rounded-lg border-l-4 border-blue-600">
@@ -149,7 +149,7 @@ export default function About() {
             <div className="space-y-6">
               <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border-l-4 border-blue-600">
                 <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-3">
-                  "Programs must be written for people to read, and only incidentally for machines to execute."
+                  &quot;Programs must be written for people to read, and only incidentally for machines to execute.&quot;
                 </p>
                 <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">
                   — Harold Abelson
@@ -157,7 +157,7 @@ export default function About() {
               </div>
               <div className="bg-white dark:bg-gray-900 p-6 rounded-lg border-l-4 border-blue-600">
                 <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-3">
-                  "The best performance optimization is eliminating unnecessary work."
+                  &quot;The best performance optimization is eliminating unnecessary work.&quot;
                 </p>
                 <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">
                   — Donald Knuth
@@ -169,7 +169,7 @@ export default function About() {
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mt-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Currently Exploring</h2>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              I'm continuously expanding my technical knowledge in areas that align with building high-performance, scalable systems:
+              I&apos;m continuously expanding my technical knowledge in areas that align with building high-performance, scalable systems:
             </p>
             <ul className="space-y-3 text-gray-700 dark:text-gray-300">
               <li className="flex items-start gap-3">
