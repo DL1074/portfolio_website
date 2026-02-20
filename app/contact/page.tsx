@@ -15,29 +15,48 @@ export default function Contact() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
+  
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-600">
                 <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Email</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">your.email@example.com</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Best for detailed inquiries</p>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
+                  david.lin001@outlook.com
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Best for professional inquiries and opportunities
+                </p>
               </div>
-              
+
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-600">
                 <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">LinkedIn</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">linkedin.com/in/yourprofile</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Professional networking</p>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
+                  linkedin.com/in/davidlin001
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Professional background and experience
+                </p>
               </div>
-              
+
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-600">
                 <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">GitHub</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">github.com/yourusername</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Check out my code</p>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
+                  github.com/DL1074
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Projects, open source work, and code samples
+                </p>
               </div>
-              
+
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-600">
                 <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Phone</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">+1 (123) 456-7890</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Quick conversations</p>
-              </div>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
+                  (808) 428-7811
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Available for calls or text
+                </p>
+              
+
+            </div>
             </div>
           </div>
         </div>

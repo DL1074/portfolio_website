@@ -32,16 +32,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              Site Objective
-            </h2>
-            <p className="text-gray-700 dark:text-gray-300">
-              The objective of this website is to provide a clear, organized overview of my skills, projects, and experience. 
-              It is designed to help recruiters, employers, and peers quickly understand my technical background and explore my work.
-              It is also designed for them to navigate relevant sections through a consistent menu available on every page.
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>

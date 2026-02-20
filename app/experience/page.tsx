@@ -1,42 +1,67 @@
 export default function Experience() {
   const experiences = [
+  {
+    title: "Incoming Software Leadership Development Associate",
+    company: "CVS Health — Irving, Texas",
+    period: "Starting July 2026",
+    description:
+      "Accepted full-time offer to join CVS Health’s Software Leadership Development Program following internship performance.",
+    responsibilities: [
+      "Selected for CVS Health’s competitive early-career engineering leadership program."
+    ],
+  },
     {
-      title: "Senior Software Engineer",
-      company: "Tech Company Inc.",
-      period: "January 2023 - Present",
-      description: "Leading development of scalable web applications and mentoring junior developers in best practices.",
-      responsibilities: [
-        "Architected and implemented microservices infrastructure serving 100K+ users",
-        "Led a team of 5 developers in agile development cycles",
-        "Reduced application load time by 40% through optimization",
-        "Implemented CI/CD pipelines improving deployment efficiency by 60%",
-      ],
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "June 2021 - December 2022",
-      description: "Developed and maintained full-stack applications using modern web technologies.",
-      responsibilities: [
-        "Built responsive web applications using React and Node.js",
-        "Collaborated with cross-functional teams to deliver projects on time",
-        "Implemented RESTful APIs and database optimization strategies",
-        "Participated in code reviews and maintained high code quality standards",
-      ],
-    },
-    {
-      title: "Junior Developer",
-      company: "StartUp Innovations",
-      period: "March 2020 - May 2021",
-      description: "Contributed to various projects while learning industry best practices and modern development workflows.",
-      responsibilities: [
-        "Developed features for web and mobile applications",
-        "Fixed bugs and improved application performance",
-        "Wrote unit tests and documentation for code modules",
-        "Participated in daily standups and sprint planning meetings",
-      ],
-    },
-  ];
+    title: "Software Engineer Intern",
+    company: "CVS Health — Woonsocket, Rhode Island",
+    period: "May 2025 – August 2025",
+    description:
+      "Worked on platform engineering tooling for internal developer workflows and schema validation automation.",
+    responsibilities: [
+      "Designed and implemented an automated GraphQL schema review system for the I90 platform, reducing manual review time for 20+ engineers and improving schema quality and consistency.",
+      "Achieved 96% unit test coverage and developed robust integration tests using real Gemini and Ollama APIs, including LLM-powered validation workflows.",
+      "Implemented LLM-based schema interpretation and feedback generation, enhancing the review process with AI-driven insights and reducing manual intervention.",
+      "Contributed 26+ commits and over 20,000 lines of code; successfully merged project into the main branch for production.",
+      "Contributed to the design and documentation of a schema validation process flow, outlining user interactions, system responsibilities, and exception handling across multiple roles.",
+      "Supported integration of schema collision detection and GenAI tooling into the automated review pipeline, helping reduce naming conflicts and improve governance.",
+      "Collaborated cross-functionally with developers and support teams to define fallback procedures for manual intervention when automation encounters edge cases.",
+      "Collaborated with mentors and cross-functional teams to align with evolving project scope and CVS Health standards.",
+    ],
+  },
+  {
+    title: "Full Stack Developer Intern",
+    company: "Takin.AI — Newark, Delaware",
+    period: "May 2024 – September 2024",
+    description:
+      "Built authentication systems, testing infrastructure, and AI-integrated workflow automation for production systems.",
+    responsibilities: [
+      "Developed and deployed a secure email authentication system with Next.js, AuthJS, and AWS SES, using AI-based bot detection to cut automated account creation by 40%, minimizing operating costs by about 5%.",
+      "Expanded Playwright-based automated testing, increasing test coverage from 5% to 20% and improving overall platform reliability.",
+      "Revamped AI workflows with Dify and OpenAI’s API, automating data pipelines and cutting manual tasks by 15%.",
+    ],
+  },
+  {
+    title: "Developer Intern",
+    company: "Prosale — Newark, Delaware",
+    period: "May 2023 – September 2023",
+    description:
+      "Contributed to backend development and API-driven data analysis systems supporting e-commerce operations.",
+    responsibilities: [
+      "Used Python and Flask to contribute to backend development of a web application designed to create an online purchase fulfillment app, increasing product fulfillment by 10 percent.",
+      "Utilized Amazon’s API with Python to analyze search keywords, optimizing product visibility and enhancing click-through rates to drive sales performance.",
+    ],
+  },
+  {
+    title: "Data Analyst Intern",
+    company: "Prosale — Newark, Delaware",
+    period: "May 2022 – September 2022",
+    description:
+      "Performed market analysis and workflow optimization using data-driven insights.",
+    responsibilities: [
+      "Conducted pricing analysis using Python web scraping, reviewing over 500 competitor listings to provide actionable insights that supported a 10% increase in sales.",
+      "Optimized device upgrade procedures, streamlining workflows to boost device upgrade production rate by 17%, from 6 to 7 devices per hour.",
+    ],
+  },
+];
 
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen">
