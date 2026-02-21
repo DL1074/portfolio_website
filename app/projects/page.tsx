@@ -16,49 +16,56 @@ export default function Projects() {
     "SQLite/MySQL",
     "NBT (PersistentDataContainer)",
     "Async Architecture"],
-  category: "Plugins"
+  category: "Plugins",
+  imageExt: "PNG"
   },
   {
     title: "Virtual Hopper Networks (VHN)",
     description:
       "High performance Minecraft server optimization plugin that virtualizes hopper item transfer networks, reducing server load by 8–10% while maintaining vanilla throughput equivalence.",
     technologies: ["Java", "Bukkit/Paper API", "Algorithms", "Performance Optimization"],
-    category: "Performance"
+    category: "Performance",
+    imageExt: "PNG"
   },
   {
     title: "Virtual Signal Network (VSN)",
     description:
       "Redstone signal virtualization engine that caches propagation state and recalculates only on input changes, eliminating expensive block update cascades and enabling large scale redstone builds without performance degradation.",
     technologies: ["Java", "Game Engine Logic", "State Caching", "Systems Design"],
-    category: "Performance"
+    category: "Performance",
+    imageExt: "PNG"
   },
   {
     title: "PocketBase",
     description:
       "Tradeable build packaging system that serializes structures into portable items with async capture/paste workflows to eliminate main thread lag. Includes real time previews, permission validation, and region safety checks.",
     technologies: ["Java", "FastAsyncWorldEdit", "NBT Data", "Async Processing"],
-    category: "Plugins"
+    category: "Plugins",
+    imageExt: "png"
   },
   {
     title: "BasicQuests",
     description:
       "Dynamic daily quest engine with randomized objectives, persistent SQLite tracking, and modular event integrations. ",
     technologies: ["Java", "SQLite", "Reflection", "Plugin Architecture"],
-    category: "Plugins"
+    category: "Plugins",
+    imageExt: "PNG"
   },
   {
     title: "Server Deflation Act",
     description:
       "Economy balancing auction system inspired by DealDash that removes excess currency from game economies through triple sink mechanics, auto bidding logic, and GUI based interactions.",
     technologies: ["Java", "GUI Systems", "Economy Design", "Event Logic"],
-    category: "Backend"
+    category: "Backend",
+    imageExt: "PNG"
   },
   {
     title: "Scam Detection Extension",
     description:
       "Browser extension that evaluates website credibility using Whois API metadata and GPT analysis to help users detect fraudulent websites and make safer browsing decisions.",
     technologies: ["JavaScript", "Next.js", "OpenAI API", "Cybersecurity"],
-    category: "AI"
+    category: "AI",
+    imageExt: "PNG"
   },
   
 ];
@@ -135,7 +142,7 @@ export default function Projects() {
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">UI Screenshot</h3>
                         <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-64 overflow-hidden">
                           <Image
-                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-screenshot.png`}
+                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-screenshot.${project.imageExt}`}
                             alt={`${project.title} Screenshot`}
                             fill
                             className="object-contain"
@@ -147,7 +154,7 @@ export default function Projects() {
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">Architecture Diagram</h3>
                         <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-64 overflow-hidden">
                           <Image
-                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-architecture.png`}
+                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-architecture.${project.imageExt}`}
                             alt={`${project.title} Architecture`}
                             fill
                             className="object-contain"
@@ -159,7 +166,7 @@ export default function Projects() {
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">Code Architecture</h3>
                         <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-64 overflow-hidden">
                           <Image
-                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-code.png`}
+                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-code.${project.imageExt}`}
                             alt={`${project.title} Code Architecture`}
                             fill
                             className="object-contain"
