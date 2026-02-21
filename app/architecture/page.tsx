@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Architecture() {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen">
@@ -15,14 +17,13 @@ export default function Architecture() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Async Task Processing Architecture
               </h2>
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4">
-                <div className="text-center">
-                  <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">Diagram Placeholder</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Add image to:</p>
-                  <code className="text-xs bg-white dark:bg-gray-800 px-3 py-2 rounded inline-block">
-                    /public/images/architecture/async-processing.png
-                  </code>
-                </div>
+              <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-96 overflow-hidden mb-4">
+                <Image
+                  src="/images/async-processing.png"
+                  alt="Async Task Processing Architecture"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-center italic">
                 This diagram shows how async tasks prevent server tick blocking by offloading I/O operations 
@@ -34,14 +35,13 @@ export default function Architecture() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Database Connection Pooling Flow
               </h2>
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4">
-                <div className="text-center">
-                  <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">Flowchart Placeholder</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Add image to:</p>
-                  <code className="text-xs bg-white dark:bg-gray-800 px-3 py-2 rounded inline-block">
-                    /public/images/architecture/connection-pooling.png
-                  </code>
-                </div>
+              <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-96 overflow-hidden mb-4">
+                <Image
+                  src="/images/connection-pooling.png"
+                  alt="Database Connection Pooling Flow"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-center italic">
                 This flowchart illustrates HikariCP connection pooling strategy, demonstrating how connection 
@@ -53,56 +53,17 @@ export default function Architecture() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Virtual Hopper Network Detection System
               </h2>
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4">
-                <div className="text-center">
-                  <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">System Design Placeholder</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Add image to:</p>
-                  <code className="text-xs bg-white dark:bg-gray-800 px-3 py-2 rounded inline-block">
-                    /public/images/architecture/vhn-system.png
-                  </code>
-                </div>
+              <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-96 overflow-hidden mb-4">
+                <Image
+                  src="/images/vhn-system.png"
+                  alt="Virtual Hopper Network Detection System"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-center italic">
-                This system design shows BFS-based network detection algorithm that identifies connected 
+                This system design shows BFS based network detection algorithm that identifies connected 
                 hopper chains and virtualizes their item transfer for 8-10% server performance improvement.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                GraphQL Schema Validation Pipeline
-              </h2>
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4">
-                <div className="text-center">
-                  <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">Architecture Diagram Placeholder</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Add image to:</p>
-                  <code className="text-xs bg-white dark:bg-gray-800 px-3 py-2 rounded inline-block">
-                    /public/images/architecture/graphql-pipeline.png
-                  </code>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-center italic">
-                This architecture diagram depicts the automated schema review system with LLM-powered validation, 
-                showing how it integrates with CI/CD pipelines to ensure schema quality before deployment.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Authentication Flow with Email Verification
-              </h2>
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4">
-                <div className="text-center">
-                  <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">Flow Diagram Placeholder</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Add image to:</p>
-                  <code className="text-xs bg-white dark:bg-gray-800 px-3 py-2 rounded inline-block">
-                    /public/images/architecture/auth-flow.png
-                  </code>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-center italic">
-                This flow diagram illustrates the secure authentication system using AuthJS and AWS SES, 
-                demonstrating how email verification reduces automated bot account creation by 40%.
               </p>
             </div>
 
@@ -110,18 +71,17 @@ export default function Architecture() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Cache-Based State Management
               </h2>
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 mb-4">
-                <div className="text-center">
-                  <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">System Architecture Placeholder</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">Add image to:</p>
-                  <code className="text-xs bg-white dark:bg-gray-800 px-3 py-2 rounded inline-block">
-                    /public/images/architecture/cache-state.png
-                  </code>
-                </div>
+              <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-96 overflow-hidden mb-4">
+                <Image
+                  src="/images/cache-state.png"
+                  alt="Cache-Based State Management"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-center italic">
                 This system architecture shows how state caching eliminates redundant computation by storing 
-                propagation results and only recalculating on input changes, enabling large-scale operations.
+                propagation results and only recalculating on input changes, enabling large scale operations.
               </p>
             </div>
           </div>

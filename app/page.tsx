@@ -22,12 +22,12 @@ export default function Home() {
                 Introduction
               </h1>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Hi, I’m David Lin. I am a Informational Technology and Informatics (ITI) student at Rutgers University with a focus on backend development, automation, and scalable systems. 
-                I enjoy building reliable, performance oriented tools, and exploring how AI can improve real world through workflows. 
+                Hi, I’m David Lin. I am an Informational Technology and Informatics student at Rutgers University with a focus on backend development, automation, and scalable systems. 
+                I enjoy building reliable, performance oriented tools, and exploring how AI can improve the real world through workflows. 
                 This site serves as a snapshot of my technical background, projects, and experience.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                Use the navigation menu to explore my projects, technical skills, and experience in more detail.
+                Explore my projects below or view my experience.
               </p>
             </div>
           </div>

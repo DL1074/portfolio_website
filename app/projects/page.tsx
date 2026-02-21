@@ -1,13 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
   {
     title: "Drinks Plugin",
   description:
-    "High performance asynchronous Minecraft brewing system featuring NBT based custom ingredients, a configurable drunk meter engine, GUI shop economy, and async database architecture. Built with event driven design, DAO + manager patterns, and HikariCP connection pooling to ensure zero main thread blocking and minimal server performance impact.",
+    "High performance asynchronous Minecraft brewing system featuring NBT based custom ingredients, a configurable drunk meter engine, GUI shop economy, and async database architecture. ",
   technologies: [
     "Java",
     "Paper API",
@@ -20,7 +21,7 @@ export default function Projects() {
   {
     title: "Virtual Hopper Networks (VHN)",
     description:
-      "High performance Minecraft server optimization plugin that virtualizes hopper item transfer networks, reducing server load by 8–10% while maintaining vanilla throughput equivalence. Uses BFS based dynamic network detection and batch scheduling to distribute CPU load evenly across ticks.",
+      "High performance Minecraft server optimization plugin that virtualizes hopper item transfer networks, reducing server load by 8–10% while maintaining vanilla throughput equivalence.",
     technologies: ["Java", "Bukkit/Paper API", "Algorithms", "Performance Optimization"],
     category: "Performance"
   },
@@ -41,7 +42,7 @@ export default function Projects() {
   {
     title: "BasicQuests",
     description:
-      "Dynamic daily quest engine with randomized objectives, persistent SQLite tracking, and modular event integrations. Includes profanity detection heuristics and reflection based plugin compatibility.",
+      "Dynamic daily quest engine with randomized objectives, persistent SQLite tracking, and modular event integrations. ",
     technologies: ["Java", "SQLite", "Reflection", "Plugin Architecture"],
     category: "Plugins"
   },
@@ -119,51 +120,50 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <button
-                    onClick={() => toggleProject(index)}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
-                  >
-                    {expandedProject === index ? '▼' : '▶'} View Details
-                  </button>
+                  {project.title !== "Server Deflation Act" && project.title !== "Scam Detection Extension" && project.title !== "Virtual Signal Network (VSN)" && (
+                    <>
+                      <button
+                        onClick={() => toggleProject(index)}
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                      >
+                        {expandedProject === index ? '▼' : '▶'} View Details
+                      </button>
 
-                  {expandedProject === index && (
+                      {expandedProject === index && (
                     <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 space-y-4">
                       <div>
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">UI Screenshot</h3>
-                        <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                          <div className="text-center">
-                            <p className="text-gray-500 dark:text-gray-400 font-medium">Screenshot Placeholder</p>
-                            <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">Add image to:</p>
-                            <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded mt-1 inline-block">
-                              /public/images/{project.title.toLowerCase().replace(/\s+/g, '-')}-screenshot.png
-                            </code>
-                          </div>
+                        <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-64 overflow-hidden">
+                          <Image
+                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-screenshot.png`}
+                            alt={`${project.title} Screenshot`}
+                            fill
+                            className="object-contain"
+                          />
                         </div>
                       </div>
 
                       <div>
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">Architecture Diagram</h3>
-                        <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                          <div className="text-center">
-                            <p className="text-gray-500 dark:text-gray-400 font-medium">Architecture Diagram Placeholder</p>
-                            <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">Add image to:</p>
-                            <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded mt-1 inline-block">
-                              /public/images/{project.title.toLowerCase().replace(/\s+/g, '-')}-architecture.png
-                            </code>
-                          </div>
+                        <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-64 overflow-hidden">
+                          <Image
+                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-architecture.png`}
+                            alt={`${project.title} Architecture`}
+                            fill
+                            className="object-contain"
+                          />
                         </div>
                       </div>
 
                       <div>
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">Code Architecture</h3>
-                        <div className="bg-gray-100 dark:bg-gray-700 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                          <div className="text-center">
-                            <p className="text-gray-500 dark:text-gray-400 font-medium">Code Architecture Placeholder</p>
-                            <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">Add image to:</p>
-                            <code className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded mt-1 inline-block">
-                              /public/images/{project.title.toLowerCase().replace(/\s+/g, '-')}-code.png
-                            </code>
-                          </div>
+                        <div className="relative bg-gray-100 dark:bg-gray-700 rounded-lg h-64 overflow-hidden">
+                          <Image
+                            src={`/images/${project.title.toLowerCase().replace(/\s+/g, '-')}-code.png`}
+                            alt={`${project.title} Code Architecture`}
+                            fill
+                            className="object-contain"
+                          />
                         </div>
                       </div>
 
@@ -174,6 +174,8 @@ export default function Projects() {
                         </p>
                       </div>
                     </div>
+                      )}
+                    </>
                   )}
                 </div>
               </div>
