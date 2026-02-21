@@ -41,7 +41,7 @@ export default function Projects() {
       "Tradeable build packaging system that serializes structures into portable items with async capture/paste workflows to eliminate main thread lag. Includes real time previews, permission validation, and region safety checks.",
     technologies: ["Java", "FastAsyncWorldEdit", "NBT Data", "Async Processing"],
     category: "Plugins",
-    imageExt: "png"
+    imageExt: "PNG"
   },
   {
     title: "BasicQuests",
