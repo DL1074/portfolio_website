@@ -90,7 +90,43 @@ export default function Projects() {
             <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">My Projects</h1>
             <p className="text-lg text-gray-600 dark:text-gray-400">A collection of my work and accomplishments</p>
           </div>
+            <div className="mb-12 space-y-8">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 shadow">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              Featured Video
+            </h2>
 
+            <div className="w-full mb-4">
+              <iframe
+                className="w-full rounded-lg"
+                height="450"
+                src="https://www.youtube.com/embed/D45hHQepIww?si=gJnzvkt1haH5uj4p"
+                title="Featured project: PocketBase"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              This video demonstrates one of my Minecraft plugins in action, highlighting the performance optimization and system design concepts used in my projects.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 shadow">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              Audio Introduction
+            </h2>
+
+            <audio controls className="w-full mb-4">
+              <source src="/audio/intro.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              This audio clip serves as a short introduction to my portfolio and highlights my interest in software development, backend systems, and technical projects.
+            </p>
+          </div>
+        </div>
           <div className="mb-8 flex flex-wrap gap-3">
             {categories.map((category) => (
               <button
